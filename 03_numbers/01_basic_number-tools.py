@@ -100,9 +100,9 @@ print(2 + 3)     # -> 5   (Addition)
 print(5 - 3)     # -> 2   (Subtraction)
 print(4 * 2)     # -> 8   (Multiplication)
 print(7 / 2)     # -> 3.5 (True division → float)
-print(7 // 2)    # -> 3   (Floor division → integer result)
-print(9 % 2)     # -> 1   (Modulus → remainder)
-print(2 ** 3)    # -> 8   (Exponentiation)
+print(7 // 2)    # -> 3   (Floor division → integer result) Divides and rounds down to the nearest whole number.
+print(9 % 2)     # -> 1   (Modulus → remainder) Returns the remainder after division.
+print(2 ** 3)    # -> 8   (Exponentiation) Raises a number to the power of another
 
 
 # ---------------------------------------

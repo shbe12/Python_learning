@@ -5,7 +5,7 @@
 #3.5 → 4
 import math # for functions like floor, ceil, and trunc
 price = 35.54879865
-print(round(price))
+print(round(price)) # Output: 36, rounds to nearest whole number, When the number is exactly halfway between two integers (ends in .5), Python rounds to the nearest even number.
 print(math.floor(price))  # Output: 35
 print(round(price, 2))  # Output: 35.55 , 2 decimal places
 print(round(price, 1))  # Output: 35.5 , 1 decimal place
