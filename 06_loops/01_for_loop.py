@@ -80,4 +80,15 @@ for score in scores:
 print("Final Total:", total)
 
 # use loops totransform data like cleaning data vefore processing
-files =
+files = [' Report.csv ', 'DATA.csv ', ' final.TXT']
+for file in files:
+    file = file.strip().lower().replace('.txt', '.csv') #cleaning data then tranform
+    print(f"Processing {file}")
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for number in numbers:
+    number_result = number * 7
+    print(f" 7 x {number} = {number_result}")
+
+star = "*"
+for
