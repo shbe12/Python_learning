@@ -90,5 +90,17 @@ for number in numbers:
     number_result = number * 7
     print(f" 7 x {number} = {number_result}")
 
-star = "*"
-for
+#or
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for number in numbers:
+    print(f"7 x {number} = {7 * number}")
+
+#or
+
+for number in range(1, 11):
+    print(f"7 x {number} = {7 * number}")
+
+for number in range(1,7):
+    print("*" * number)
