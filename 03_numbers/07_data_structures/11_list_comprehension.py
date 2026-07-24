@@ -66,7 +66,7 @@ cleaned = [
     for d in domains
     if '.' in d
 ]
-
+-
 print(cleaned)
 
 #indexing  using parantehesis and specifying the index of the item in the list
