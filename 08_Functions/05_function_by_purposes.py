@@ -83,13 +83,66 @@ print(is_valid_email("sara@gmail")) #False
 # 4. if it is valid, clean and structure the email.
 # 5. log each step of the program.
 
-# ask user for email.
-write_log("App Started")
+# # exta info- at start log "App Started", at the end log "App Stopped"
+# write_log("App Started")
+# # ask user for input
+# email = input("Enter your email: ")
+# # 2 types of function work together, first validate email we are validate function then use transformation
+# # check if it a valid email
+# # if not valid , then log , write an issue inside  the log,
+# #  there is somekind of condition, if fulfilled write a log
+# # build condition
+# if not is_valid_email(email):
+#     write_log(f"Invalid Email received:{email}")
+#     #if valid clean and structure info
+# else:
+#     # process email , clean and split, print inside our log
+#     # store the returned value from the function in a global variable
+#     clean_email = clean_and_split_email(email)
+#     # last step log everything that is happening
+#     #if it is valid log
+#     # then print it in the logs
+#     write_log(f"Processed Email:{clean_email}")
+# write_log("App Stopped")
+
+# Orchestrator Function
+def process_user_email(email):
+    # we can either leave the input empty because we are getting the email from the user inpur
+    #or we take only the user input  step outside and we send this
+    # lets take the user input step outside the orchstraor function
+    # exta info- at start log "App Started", at the end log "App Stopped"
+    write_log("App Started")
+    # 2 types of function work together, first validate email we are validate function then use transformation
+    # check if it a valid email
+    # if not valid , then log , write an issue inside  the log,
+    #  there is somekind of condition, if fulfilled write a log
+    # build condition
+    if not is_valid_email(email):
+        write_log(f"Invalid Email received:{email}")
+        #if valid clean and structure info
+    else:
+        # process email , clean and split, print inside our log
+        # store the returned value from the function in a global variable
+        clean_email = clean_and_split_email(email)
+        # last step log everything that is happening
+        #if it is valid log
+        # then print it in the logs
+        write_log(f"Processed Email:{clean_email}")
+    write_log("App Stopped")
+
+# orchestrator email call other functions in the correct order
+# all we have to do in the body of the program is calling this function
+# the body of our progam has only two lines of code gice the data and process it
+# everything else is actually inside functions
+# ask user for input
 email = input("Enter your email: ")
-is_valid_email(email)
-if not is_valid_email(email):
-    write_log(f"Invalid Email received:{email}")
-else:
-    clean_email =clean_and_split_email(email)
-    write_log(f"Processed Email:{clean_email}")
-write_log("App Stopped")
+# collect email and processuseremail and pass the input from user
+process_user_email(email)
+
+# Summary functions by purpose, Function Types Review
+#1.Action functions make things happen, interact with things outside your program ,
+# your system, printing,saving files, calling an API,
+# 2.the transformation function work with your data, take input,change it, return a new value
+# 3.Validation function checks the rules, answer your questions with either yes or no
+# used to protect your system and to check the quality of your bad data
+# 4. The orchestrator function connect everything together by calling other many functions in the correct order

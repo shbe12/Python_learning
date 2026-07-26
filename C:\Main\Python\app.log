@@ -11,3 +11,30 @@ App Stopped
 App Started
 Processed Email:{'username': 'sara', 'domain': 'gmail.com'}
 App Stopped
+App Stopped
+App Started
+Processed Email:{'username': 'sara', 'domain': 'gmail.com'}
+App Stopped
+App Stopped
+App Started
+App Stopped
+App Started
+Invalid Email received:saragmail.com
+App Stopped
+App Stopped
+App Started
+Invalid Email received:saragmail.com
+App Stopped
+App Stopped
+App Started
+App Stopped
+App Started
+App Stopped
+App Started
+Invalid Email received:saragmail.com
+App Stopped
+App Stopped
+App Started
+Processed Email:{'username': 'sb', 'domain': 'gmail.com'}
+App Stopped
+App Stopped
